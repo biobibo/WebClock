@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>popup</title>
+  <style>
+  body{
+    width:200px;
+  }
+  .countTime {
+    width: 200px;
+    margin:0 auto;
+  }
+
+  .count-hours,.count-mins,.count-secs{
+    display: inline-block;
+      width:50px;
+      height:50px;
+      border: 2px solid black;
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+    }
+
+  </style>
+</head>
+<body>
+<div class="main">
+<div class="container" style="display: block">
+  <p class="intro">
+    set you surface time,it will alarm you when time is up.
+  </p>
+  <form action="" id="alarm">
+    <label for="setHours" class="hou">
+    <input type="number" id="setHours" min="0" max="24"  name="hour">
+    <span class="H">Hours</span>
+    </label>
+    <label for="setMins" class="min">
+    <input type="number" id="setMins" min="0" max="60"  name="minute">
+    <span class="M">Mins</span>
+    </label>
+  </form>
+  <button  id="submit">OK</button>
+</div>
+<div class="countTime" style="display: none">
+  <span class="count-hours"></span>
+  <span class="count-mins"></span>
+  <span class="count-secs"></span>
+</div>
+<div class="notify" style="display: none;">
+</div>
+</div>
+</body>
+<script src="alarmClock.js"></script>
+</html>

@@ -1,0 +1,13 @@
+{
+  "manifest_version":2, // 固定写法
+
+  "name":"WebClock",//插件名称
+  "version":"1.0",//插件版本
+  "description":"对上网时间进行设置，到时发出通知",//插件描述
+  "browser_action":{
+    "default_icon":"alarm.png",//图标
+    "default_title":"ThunderClock",//图标显示信息
+    "default_popup":"popup.html"//默认点击图标显示页面
+  }
+
+}
